@@ -7,8 +7,6 @@ function colors() {
 }
 colors();
 let avatar = document.querySelector('.avatar img')
-let footer = document.querySelector('.footer')
+let head = document.querySelector('.head')
 avatar.style.border = `2px solid rgb(${nums})`;
-footer.style.borderTop = `2px solid rgb(${nums})`;
-
-console.log(nums);
+head.style.color = `rgb(${nums})`;

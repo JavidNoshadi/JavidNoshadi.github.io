@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --main-color:#BBBCCD;
+}
 body{
   position: relative;
   height: 100vh;
