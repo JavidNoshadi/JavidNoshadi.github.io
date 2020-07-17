@@ -10,6 +10,8 @@ body{
   position: relative;
   height: 100vh;
   width: 100%;
+  font-family: 'B Koodak', tahoma, Arial;
+  background-image:linear-gradient(175deg, black 40%,white 10%);
 }
 .avatar{
   height:250px;
@@ -17,11 +19,26 @@ body{
   background:#717498;
   border-radius:50%;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%,-20%);
+  transform: translate(-50%,-10%);
 }
 .avatar img{
   height: 100%;
   border-radius:50%;
+}
+.head{
+  direction: rtl;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.links{
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  transform: translate(-10%,-90%);
 }
