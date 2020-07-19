@@ -2,23 +2,45 @@
   margin: 0;
   padding: 0;
 }
-
+.container{
+  transition: 1s all ease;
+}
 .loader {
   background: black;
   position: absolute;
   height: 100vh;
   width: 100%;
   color: white;
+  overflow: hidden;
 }
-
+.loader h1{
+  position: absolute;
+  top: 50%;
+  font-family: 'Raleway', sans-serif;
+  left: 50%;
+  word-spacing: -10px;
+  transform: translate(-50%,-50%);
+  animation: textanim 4s ease-in forwards;
+}
 .dot {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
   width: 40px;
   height: 40px;
   background: white;
   border-radius: 50%;
-  animation: dotanim 5s ease forwards;
+  animation: dotanim 4s ease forwards;
 }
-
+@keyframes textanim{
+  from{
+    word-spacing: -10px;
+  }
+  to{
+    word-spacing: 15px;
+    opacity: 0.4;
+  }
+}
 @keyframes dotanim {
 
   10% {
