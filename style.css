@@ -9,13 +9,16 @@
   width: 100%;
   overflow: hidden;
 }
-.head{
+
+.head {
   height: 10vh;
-  
+
 }
-.head .logo{
-  height: 30%;
+
+.head .logo {
+  height: 80%;
 }
+
 .loader {
   background: black;
   position: absolute;
@@ -30,7 +33,7 @@
   top: 50%;
   font-family: 'Raleway', sans-serif;
   left: 50%;
-  word-spacing: -10px;
+  letter-spacing: 0px;
   transform: translate(-50%, -50%);
   animation: textanim 4s ease-in forwards;
 }
@@ -43,16 +46,25 @@
   height: 40px;
   background: white;
   border-radius: 50%;
-  animation: dotanim 4s ease forwards;
+  animation: dotanim 1s ease forwards;
+}
+
+.helloworld:before {
+  content: '</';
+  color: #FF00B7;
+}
+.helloworld:after {
+  content: '>';
+  color: #ff00b7;
 }
 
 @keyframes textanim {
   from {
-    word-spacing: -10px;
+    letter-spacing: 0px;
   }
 
   to {
-    word-spacing: 15px;
+    letter-spacing: 10px;
     opacity: 0.4;
   }
 }
