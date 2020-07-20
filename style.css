@@ -2,8 +2,19 @@
   margin: 0;
   padding: 0;
 }
-.container{
+
+.container {
   transition: 1s all ease;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.head{
+  height: 10vh;
+  
+}
+.head .logo{
+  height: 30%;
 }
 .loader {
   background: black;
@@ -13,15 +24,17 @@
   color: white;
   overflow: hidden;
 }
-.loader h1{
+
+.loader h1 {
   position: absolute;
   top: 50%;
   font-family: 'Raleway', sans-serif;
   left: 50%;
   word-spacing: -10px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   animation: textanim 4s ease-in forwards;
 }
+
 .dot {
   position: absolute;
   left: 50px;
@@ -32,15 +45,18 @@
   border-radius: 50%;
   animation: dotanim 4s ease forwards;
 }
-@keyframes textanim{
-  from{
+
+@keyframes textanim {
+  from {
     word-spacing: -10px;
   }
-  to{
+
+  to {
     word-spacing: 15px;
     opacity: 0.4;
   }
 }
+
 @keyframes dotanim {
 
   10% {
