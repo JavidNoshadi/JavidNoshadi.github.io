@@ -17,7 +17,6 @@
   height: 70px;
   position: relative;
   background: none;
-  border-bottom: 1px #ff00b7 solid;
   backdrop-filter: blur(1px);
 }
 
@@ -39,25 +38,56 @@
 
 }
 
-.feather-menu {
+.menu {
   position: absolute;
-  top: 10 px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   z-index: 3;
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+	animation: jello-horizontal 0.9s linear both;
+	border:1px solid #ff00df;
+	border-radius:2px;
 }
-
-.feather-menu.active {
-  position: absolute;
-  top: 10 px;
-  left: 20px;
-  z-index: 3;
-  height: 24px;
-  width: 24px;
-  fill: pink;
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
-
+.menu.active{
+  background: #ff00b7;
+}
+.ham.active{
+  background: white;
+}
+.ham{
+  width: 80%;
+  height: 3px;
+  background: #ff00df;
+  margin: 3px 6px;
+}
 .loader h1 {
   position: absolute;
   top: 50%;
@@ -162,7 +192,10 @@
   justify-content: space-between;
   align-items: center;
   transform: scale(1);
+  border-right: 1px solid #ff00df;
+    border-bottom: 2px solid #ff00df;
   transition: height .3s ease-in;
+  
 
 }
 
@@ -206,4 +239,13 @@ h3:first-letter {
   background-repeat: no-repeat;
   background-size:200%;
   z-index: -45;
+}
+.links a:hover:after{
+  content:'';
+  height: 15px;
+  width: 40px;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  background: red;
 }
