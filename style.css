@@ -119,7 +119,7 @@
   height: 40px;
   background: white;
   border-radius: 50%;
-  animation: dotanim 1s ease forwards;
+  animation: dotanim 4s ease forwards;
 }
 
 .helloworld:before {
