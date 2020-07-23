@@ -3,17 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
+
 .container {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background: white;
-        font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   /* background-image: linear-gradient(blue, red, white);
   background-size: 500% 500%;
   background-position:1000px; */
@@ -41,7 +43,7 @@ body{
   width: 100%;
   color: white;
   z-index: 9999;
-        font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
 
 }
@@ -233,6 +235,7 @@ body{
   z-index: 3;
   overflow: hidden;
 }
+
 h1:first-letter {
   color: #ff00df;
 }
@@ -289,11 +292,13 @@ h3:first-letter {
 .insta:hover {
   stroke: #951C5D;
 }
-@media screen and (min-width: 1200px){
-  .hero{
+
+@media screen and (min-width: 1200px) {
+  .hero {
     font-size: 250%;
   }
-  body{
+
+  body {
     overflow: hidden;
     height: 100vh;
     width: 100%;
