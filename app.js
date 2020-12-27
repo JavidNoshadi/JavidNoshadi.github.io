@@ -1,9 +1,9 @@
 const body = document.querySelector('body')
-const loader = document.querySelector('.loader')
+/* const loader = document.querySelector('.loader')
 const dot = document.querySelector('.dot')
 dot.addEventListener('animationend', () => {
   loader.style.display = 'none'
-})
+}) */
 const hamburger = document.querySelector('.menu')
 const links = document.querySelector('.links')
 const lines = document.querySelectorAll('.ham')

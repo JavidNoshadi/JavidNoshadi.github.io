@@ -231,25 +231,16 @@
   width: 100%;
   overflow: hidden;
   flex-direction: column;
+  direction: rtl;
 }
 .txts h1{
   margin-bottom:40px;
 }
-h1:first-letter {
-  color: #ff00df;
-}
 
-h4:first-letter {
-  color: #ff00df;
-}
-
-h3:first-letter {
-  color: #ff00df;
-}
 
 .wave {
   background-image: url('img/Wave-10s-2811px.svg');
-  height: 800px;
+  height: 400px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -258,8 +249,20 @@ h3:first-letter {
   background-repeat: no-repeat;
   background-size: 200%;
   z-index: 2;
+  background-size: cover;
+  animation: waving 7s ease alternate infinite;
 }
-
+.wave.wave1{
+  animation-delay: 3s;
+}
+@keyframes waving {
+  to{
+    left:-50px;
+  }
+}
+.icon{
+  stroke: #272738;
+}
 .codepen:hover {
   stroke: black;
 }
@@ -296,10 +299,26 @@ h3:first-letter {
   .hero {
     font-size: 250%;
   }
-
+.wave{
+  background-size: 100%;
+}
+.links.open{
+  height: 400px;
+}
   body {
     overflow: hidden;
     height: 100vh;
     width: 100%;
   }
+}
+
+.جاوید {
+  font-size: 120px;
+  font-family: "THULUTH THARWAT EMARA GOLDEN";
+  color: rgb( 0, 0, 0 );
+  text-align: right;
+  position: absolute;
+  left: 229.385px;
+  top: 127.067px;
+  z-index: 1;
 }
