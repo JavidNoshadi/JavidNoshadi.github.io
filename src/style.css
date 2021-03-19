@@ -1,90 +1,46 @@
 * {
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
-  width: 100%;
-  background: url("/src/bck.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(45deg, #00f7ff, #52bcfa, rgba(8, 206, 241, 0.664));
+  background-size: 200% 200%;
   background-position: center;
 }
 
-.head {
-  height: 40px;
+section {
+  height: 200px;
   width: 90%;
-  position: absolute;
-  left: 50%;
-  top: 30px;
-  transform: translateX(-50%);
-  background: none;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 15px;
 }
-
-.head h3 {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 200;
-  font-family: "Yellowtail", cursive;
-  font-size: 22px;
-}
-
-.head div {
-  width: 40px;
-  height: 40px;
-}
-
-.head div svg {
-  height: 100%;
+section .footer {
   width: 100%;
-  fill: rgba(255, 255, 255, 0.8);
-}
-
-.container {
-  height: 50vh;
-  background: red;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-}
-
-.container .center {
-  background: blue;
-  height: 100px;
-}
-
-.container .center h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 200;
-  font-family: "Yellowtail", cursive;
-  font-size: 60px;
-}
-
-.container .left {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    background: url("/src/bck.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 80%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  body {
-    background: url("/src/bck.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+  bottom: 0;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */
