@@ -8,7 +8,7 @@ $font1: 'Yellowtail', cursive;
 
 
 body{
-    background: linear-gradient(45deg , rgb(0, 247, 255) ,rgb(82, 188, 250), rgba(8, 206, 241, 0.664));
+    background: linear-gradient(45deg , rgba(0, 247, 255, 0.651) ,rgba(82, 188, 250, 0.781), rgba(8, 206, 241, 0.664));
     background-size: 200% 200%;
     background-position: center;
 }
@@ -19,7 +19,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(26, 25, 25);
     border: 1px solid rgba(255, 255, 255, 0.76);
     backdrop-filter: blur(10px);
     border-radius: 15px;

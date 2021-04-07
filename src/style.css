@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, #00f7ff, #52bcfa, rgba(8, 206, 241, 0.664));
+  background: linear-gradient(45deg, rgba(0, 247, 255, 0.651), rgba(82, 188, 250, 0.781), rgba(8, 206, 241, 0.664));
   background-size: 200% 200%;
   background-position: center;
 }
@@ -25,7 +25,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: #1a1919;
   border: 1px solid rgba(255, 255, 255, 0.76);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
