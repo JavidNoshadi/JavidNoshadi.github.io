@@ -6,41 +6,37 @@
   padding: 0;
 }
 
-body {
-  background: linear-gradient(45deg, rgba(0, 247, 255, 0.651), rgba(82, 188, 250, 0.781), rgba(8, 206, 241, 0.664));
-  background-size: 200% 200%;
-  background-position: center;
+@font-face {
+  font-family: "yekan";
+  src: url("./yekan.ttf");
 }
-
-section {
-  height: 200px;
-  width: 90%;
-  max-width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #1a1919;
-  border: 1px solid rgba(255, 255, 255, 0.76);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 15px;
-}
-section .footer {
-  width: 100%;
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f1d1d;
+    color: white;
+    font-family: yekan, cursive;
+  }
+  body section p a {
+    text-decoration: none;
+  }
+  body section p a .nodejs {
+    color: green;
+    border-radius: 6px;
+    padding: 4px 8px;
+    z-index: 3;
+  }
+  body section p a .nodejs::before {
+    background-color: greenyellow;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 2;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
